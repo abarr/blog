@@ -27,3 +27,9 @@ config :blog, BlogWeb.Endpoint,
 #
 # Then you can assemble a release by calling `mix release`.
 # See `mix help release` for more information.
+
+config :blog, Blog.Subscription.Mailgun,
+  list: "weather@newsletter.ducksnutsfishing.com",
+  base_url: "https://api.mailgun.net/v3/",
+  username: "api",
+  password: "key-ef2a9b6e6cad2b2beccf0518a6068107"

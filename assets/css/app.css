@@ -14,7 +14,9 @@
 
 @import "../node_modules/nprogress/nprogress.css";
 
-
+p{
+  padding-top: 15px;
+}
 
 h2{
   font-size: larger;

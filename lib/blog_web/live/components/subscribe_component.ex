@@ -45,8 +45,27 @@ defmodule BlogWeb.Components.SubscribeComponent do
           </div>
         </div>
         <% end %>
+        <div>
 
+
+         </div>
+
+         <div class="bg-white">
+          <div class="max-w-screen-xl py-5 px-4 ">
+            <h2 class="text-gray-400 ">Follow all our socials</h2>
+            <div class="grid grid-cols-5 gap-1 ">
+              <div class="col-span-1 flex justify-center 1">
+                 <a href="https://www.instagram.com/ducksnutsfishing/" target="blank"><i class="fab fa-instagram fa-3x"></i></a>
+              </div>
+              <div class="col-span-1 flex justify-center ">
+                <a href="https://www.facebook.com/ducksnutstackle" target="blank"><i class="fab fa-facebook-square fa-3x"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+
 
     """
   end
