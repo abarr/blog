@@ -1,6 +1,6 @@
 
 <div class="grid gap-4 grid-cols-1 lg:grid-cols-3 ">
-  <div class="lg:col-span-2">
+  <div class="lg:col-span-2 pl-5">
 
     <span class="font-semibold text-4xl">
       <%= @post.title %>
@@ -8,12 +8,7 @@
     <p class="text-gray-500 text-sm">
       <%= @post.author %>, <%= Datex.Date.format_date(@post.date, "DAY_FULL, DATE MONTH_NAME_FULL YYYY") %>
     </p>
-    <div class="bg-red-100 border mt-5 border-red-200 text-sm text-red-700 px-4 py-3 rounded relative mb-8" role="alert">
 
-      <span class="block sm:inline ">Note: This newsletter is for information purposes only, you should always check the
-        weather
-        yourself.</span>
-    </div>
     <span>
     <%= @post.body %>
     </span>
