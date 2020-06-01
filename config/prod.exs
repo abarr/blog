@@ -13,7 +13,7 @@ config :blog, Blog.Subscription.Mailgun,
   username: "api",
   password: ""
 
-database_url = ""
+database_url = "postgresql://doadmin:o1gpx08g5oujhv91@db-postgresql-sfo2-15967-do-user-7439692-0.a.db.ondigitalocean.com:25060/defaultdb?sslmode=require"
 
 config :blog, Blog.Repo,
   # ssl: true,
