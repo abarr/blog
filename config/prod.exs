@@ -1,6 +1,6 @@
 use Mix.Config
 
-secret_key_base = System.get_env("PROD_SECRET_KEY")
+secret_key_base = System.fetch_env!("PROD_SECRET_KEY")
 
 config :blog, BlogWeb.Endpoint,
   http: [
@@ -13,7 +13,7 @@ config :blog, Blog.Subscription.Mailgun,
   list: "weather@newsletter.ducksnutsfishing.com",
   base_url: "https://api.mailgun.net/v3/",
   username: "api",
-  password: System.get_env("PROD_MAIL_KEY")
+  password: System.fetch_env!("PROD_MAIL_KEY")
 
 database_url = ""
 
