@@ -1,12 +1,33 @@
 use Mix.Config
 
-# We don't run a server during test. If one is required,
-# you can enable the server option below.
-config :blog, BlogWeb.Endpoint,
-  http: [port: 4002],
-  server: false
+use Mix.Config
 
-# Print only warnings and errors during test
+config :blog, BlogWeb.Endpoint,
+  server: true,
+  http: [
+    port: String.to_integer(System.get_env("PORT") || "4002"),
+    transport_options: [socket_opts: [:inet6]]
+  ],
+  secret_key_base: System.get_env("TEST_SECRET_KEY") ,
+  url: [host: "test.ducksnutsfishing.com", port: 80],
+  check_origin: [
+    "https://test.ducksnutsfishing.com",
+    "http://test.ducksnutsfishing.com:4002"
+  ]
+
+config :blog, Blog.Subscription.Mailgun,
+  list: "test@newsletter.ducksnutsfishing.com",
+  base_url: "https://api.mailgun.net/v3/",
+  username: "api",
+  password: System.get_env("TEST_MAIL_KEY")
+
+database_url = ""
+
+config :blog, Blog.Repo,
+  # ssl: true,
+  url: database_url,
+  pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10")
+
 config :logger, level: :warn
 
-import_config "test.secret.exs"
+
