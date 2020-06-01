@@ -13,7 +13,7 @@ config :blog, BlogWeb.Endpoint,
     "https://www.ducksnutsfishing.com",
     "http://www.ducksnutsfishing.com:4000"
   ],
-  secret_key_base: "trfMak2t2RxNga25lfKVN/y1hIO8cTIT9l7V7tZ2FSSl2bDz+L3O3FemnvrkzLjy",
+  secret_key_base: "trfMak2t2RxNga25lfKVN/y1hIO8cTIT9l7V7tZ2FSSl2bDz+L3O3FemnvrkzLjy"
 
 config :blog, Blog.Subscription.Mailgun,
   list: "weather@newsletter.ducksnutsfishing.com",
