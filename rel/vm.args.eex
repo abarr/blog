@@ -1,5 +1,6 @@
 ## Customize flags given to the VM: http://erlang.org/doc/man/erl.html
 ## -mode/-name/-sname/-setcookie are configured via env vars, do not set them here
+-name ${NODE_NAME}@ubuntu-dnf-app
 
 ## Number of dirty schedulers doing IO work (file, sockets, and others)
 ##+SDio 5
