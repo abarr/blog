@@ -1,0 +1,21 @@
+name: Deploymnet Workflow
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy changes to server via ssh connection
+      uses: appleboy/ssh-sction@master
+      with:
+        host: ducksnutsfishing.com
+        username: andrewb
+        key: ${{ secrets.DNF_SECRET }}
+        port: 22
+        script: |
+          cd blog
+          git pull origin master
+          git status

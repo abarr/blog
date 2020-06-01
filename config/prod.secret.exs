@@ -4,12 +4,7 @@
 # remember to add this file to your .gitignore.
 use Mix.Config
 
-secret_key_base =
-  System.get_env("SECRET_KEY_BASE") ||
-    raise """
-    environment variable SECRET_KEY_BASE is missing.
-    You can generate one by calling: mix phx.gen.secret
-    """
+secret_key_base = ""
 
 config :blog, BlogWeb.Endpoint,
   http: [
@@ -32,4 +27,11 @@ config :blog, Blog.Subscription.Mailgun,
   list: "weather@newsletter.ducksnutsfishing.com",
   base_url: "https://api.mailgun.net/v3/",
   username: "api",
-  password: "key-ef2a9b6e6cad2b2beccf0518a6068107"
+  password: ""
+
+database_url = ""
+
+config :blog, Blog.Repo,
+  # ssl: true,
+  url: database_url,
+  pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10")
