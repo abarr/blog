@@ -8,7 +8,7 @@ config :blog, BlogWeb.Endpoint,
     port: String.to_integer(System.get_env("PORT") || "4002"),
     transport_options: [socket_opts: [:inet6]]
   ],
-  secret_key_base: System.get_env("TEST_SECRET_KEY") ,
+  secret_key_base: "" ,
   url: [host: "test.ducksnutsfishing.com", port: 80],
   check_origin: [
     "https://test.ducksnutsfishing.com",
