@@ -23,7 +23,7 @@ config :blog, Blog.Subscription.Mailgun,
 
 config :blog, Blog.Repo,
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
-  url: "postgresql://blog_user:ffvyte83z9ypzvby@db-postgresql-sfo2-15967-do-user-7439692-0.a.db.ondigitalocean.com:25060/blog_prod?sslmode=require",
+  url: "postgresql://blog_user:ffvyte83z9ypzvby@db-postgresql-sfo2-15967-do-user-7439692-0.a.db.ondigitalocean.com:25060/blog_prod?sslmode=require"
 
 # Do not print debug messages in production
 config :logger, level: :info
