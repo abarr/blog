@@ -22,6 +22,6 @@ jobs:
           MIX_ENV=prod mix compile
           npm run deploy --prefix ./assets
           mix phx.digest
-          MIX_ENV=prod mix release prod --overwrite
+          MIX_ENV=prod NODE_NAME=blog_prod mix release prod --overwrite
           _build/prod/rel/blog/bin/blog stop
           _build/prod/rel/blog/bin/blog daemon
