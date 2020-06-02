@@ -18,6 +18,7 @@ jobs:
         script: |
           cd blog
           git pull origin master
+          rm -rf _build
           mix deps.get --only prod
           MIX_ENV=prod mix compile --force
           npm run deploy --prefix ./assets
