@@ -18,11 +18,11 @@ jobs:
         script: |
           cd blog
           git pull origin master
+          _build/prod/rel/blog/bin/blog stop
           rm -rf _build
           mix deps.get --only prod
           MIX_ENV=prod mix compile --force
           npm run deploy --prefix ./assets
           mix phx.digest
           MIX_ENV=prod NODE_NAME=blog_prod mix release prod --overwrite
-          _build/prod/rel/blog/bin/blog stop
           _build/prod/rel/blog/bin/blog daemon
