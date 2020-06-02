@@ -10,17 +10,7 @@ defmodule Blog.MixProject do
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
-      deps: deps(),
-      releases: [
-        prod: [
-          include_executables_for: [:unix],
-          applications: [runtime_tools: :permanent]
-        ],
-        test: [
-          include_executables_for: [:unix],
-          applications: [runtime_tools: :permanent]
-        ]
-      ]
+      deps: deps()
 
     ]
   end
