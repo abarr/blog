@@ -62,6 +62,7 @@ defmodule Blog.MixProject do
       {:datex, "~> 1.0"},
       {:tesla, "~> 1.3.0"},
       {:hackney, "~> 1.15.2"},
+      {:swoosh, "~> 0.25"}
     ]
   end
 

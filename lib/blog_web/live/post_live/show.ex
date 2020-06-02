@@ -18,5 +18,5 @@ defmodule BlogWeb.PostLive.Show do
     }
   end
 
-  defp page_title(:show), do: "Ducks Nust Tackle"
+  defp page_title(:show), do: "Ducks Nuts Tackle"
 end

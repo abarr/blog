@@ -13,15 +13,15 @@
 
  I was on The Strand this morning, and it was picture perfect. It was glassing out in the bay, and a few boats were heading out. It was almost enough for me to wipe the dust of Mojo and go for a spin.
 
- <img style="padding-top: 20px; padding-bottom: 20px;" src="/images/posts/27-may-tsv.jpg">
+ <img style="padding-top: 20px; padding-bottom: 20px;" src="https://ducksnutsfishing.com/images/posts/27-may-tsv.jpg">
 
  However, a quick check of the weather confirmed it would have been a short trip. From tomorrow seas are back to one metre at seven-second intervals.
 
- <img style="padding-top: 20px;" src="/images/posts/27-may-wind.png">
+ <img style="padding-top: 20px;" src="https://ducksnutsfishing.com/images/posts/27-may-wind.png">
 
  Tides and moon are not favourable until late next week, but the current long-range forecast does not look promising. Let's all keep everything crossed and hope for a change.
 
- <img style="padding-top: 20px;" src="/images/posts/27-may-tides.png">
+ <img style="padding-top: 20px;" src="https://ducksnutsfishing.com/images/posts/27-may-tides.png">
 
  Chewin' the Fat
  ---------------
