@@ -10,6 +10,7 @@ defmodule Blog.Posts do
   end
 
   posts_paths = "posts/**/*.md" |> Path.wildcard() |> Enum.sort()
+  IO.inspect(posts_paths)
 
   posts =
     for post_path <- posts_paths do
