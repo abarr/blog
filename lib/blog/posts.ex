@@ -18,7 +18,6 @@ defmodule Blog.Posts do
     end
 
   @posts Enum.sort_by(posts, & &1.date, {:desc, Date})
-  IO.inspect(@posts)
 
   @doc """
   Returns the list of posts.
@@ -57,7 +56,6 @@ defmodule Blog.Posts do
   """
   def get_latest_post!() do
     Enum.at(list_posts(),0)
-    |> IO.inspect(label: "Latest Post: ")
   end
 
 
