@@ -7,6 +7,12 @@
 # General application configuration
 use Mix.Config
 
+config :blog, Blog.Repo,
+  database: "blog_repo",
+  username: "user",
+  password: "pass",
+  hostname: "localhost"
+
 config :blog,
   ecto_repos: [Blog.Repo]
 
