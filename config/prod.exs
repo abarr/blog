@@ -26,9 +26,9 @@ config :blog, Blog.Mail.Mailer,
   api_key: "key-ef2a9b6e6cad2b2beccf0518a6068107",
   domain: "newsletter.ducksnutsfishing.com"
 
-config :blog, Blog.Repo,
-  pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
-  url: "postgresql://blog_user:ffvyte83z9ypzvby@db-postgresql-sfo2-15967-do-user-7439692-0.a.db.ondigitalocean.com:25060/blog_prod?sslmode=require"
+# config :blog, Blog.Repo,
+#   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
+#   url: "postgresql://blog_user:ffvyte83z9ypzvby@db-postgresql-sfo2-15967-do-user-7439692-0.a.db.ondigitalocean.com:25060/blog_prod?sslmode=require"
 
 # Do not print debug messages in production
 config :logger, level: :info
