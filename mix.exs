@@ -51,7 +51,8 @@ defmodule Blog.MixProject do
       {:earmark, "~> 1.4"},
       {:datex, "~> 1.0"},
       {:tesla, "~> 1.3.0"},
-      {:hackney, "~> 1.15.2"},
+      # {:hackney, "~> 1.15.2"},
+      {:hackney, github: "benoitc/hackney", override: true},
       {:swoosh, "~> 0.25"}
     ]
   end

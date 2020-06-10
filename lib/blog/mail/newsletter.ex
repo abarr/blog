@@ -11,6 +11,7 @@ defmodule Blog.Mail.Newsletter do
     |> from({"The Duck", "weather@ducksnutsfishing.com"})
     |> subject(latest_post.title)
     |> html_body(body)
+    |> IO.inspect
   end
 
 end
