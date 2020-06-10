@@ -22,12 +22,12 @@
  Chewin' the Fat
  ---------------
 
-My last trip out to Davies there was a heap of run, and I wanted to keep the bait up and swinging in the current. I found this video with a Poternoster Rig that twisted the tag lines to give them some stiffness. They take a bit longer to rig up but well worth the effort is you are swinging around and bouncing your sinker. I recommend giving it a go.
+My last trip out to Davies there was a heap of run, and I wanted to keep the bait up and swinging in the current. I found this video with a Poternoster Rig that twisted the tag lines to give them some stiffness. They take a bit longer to rig up but well worth the effort if you are swinging around and bouncing your sinker. I recommend giving it a go.
 
  <iframe width="560" height="315" src="https://www.youtube.com/embed/olaM6o4LwT0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-
+Please don't forget to share the link with everyone you know to follow us on all the socials. If you have recieved this email in error please click the unsubscribe link below.
 
 
 

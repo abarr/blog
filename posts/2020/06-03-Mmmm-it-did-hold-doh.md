@@ -28,8 +28,6 @@
 
  I had hoped to have a video this week showing how to make a beer can popper. Unfortunately, I didn't have a beer to hand so like a trooper grabbed a coldie from the fridge and one thing led to another. Now I have plenty of beer cans but no lure. Attempt number two this weekend.
 
- Please don't forget to share the link with everyone you know to follow us on all the socials.
-
- If you have recieved this email in error please click the unsubscribe link below.
+ Please don't forget to share the link with everyone you know to follow us on all the socials. If you have recieved this email in error please click the unsubscribe link below.
 
 
