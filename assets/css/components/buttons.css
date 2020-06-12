@@ -1,0 +1,7 @@
+.menu-btn-active {
+    @apply inline-flex items-center px-1 pt-1 border-b-2 text-lg font-medium leading-5 text-gray-900 border-indigo-500 mr-2;
+  }
+  .menu-btn {
+    @apply inline-flex items-center px-1 pt-1 border-b-2 text-lg font-medium leading-5 text-gray-900 mr-2;
+  }
+  
