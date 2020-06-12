@@ -18,7 +18,8 @@ jobs:
         script: |
           cd blog
           git pull origin master
-          mix deps.get --only prod
+          mix deps.get --only prod 
+          npm install --prefix ./assets
           MIX_ENV=prod mix compile --force
           npm run deploy --prefix ./assets
           mix phx.digest
