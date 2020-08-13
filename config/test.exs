@@ -19,11 +19,4 @@ config :blog, Blog.Subscription.Mailgun,
   username: "api",
   password: System.get_env("TEST_MAIL_KEY")
 
-config :blog, Blog.Repo,
-  # ssl: true,
-  url: "postgresql://blog_user:ffvyte83z9ypzvby@db-postgresql-sfo2-15967-do-user-7439692-0.a.db.ondigitalocean.com:25060/blog?sslmode=require",
-  pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10")
-
 config :logger, level: :warn
-
-

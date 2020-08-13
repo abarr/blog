@@ -19,24 +19,12 @@ config :blog, Blog.Subscription.Mailgun,
   list: "weather@newsletter.ducksnutsfishing.com",
   base_url: "https://api.mailgun.net/v3/",
   username: "api",
-  password: "key-ef2a9b6e6cad2b2beccf0518a6068107"
+  password:  System.get_env("TEST_MAIL_KEY")
 
 config :blog, Blog.Mail.Mailer,
   adapter: Swoosh.Adapters.Mailgun,
-  api_key: "key-ef2a9b6e6cad2b2beccf0518a6068107",
+  api_key:  System.get_env("TEST_MAIL_KEY"),
   domain: "newsletter.ducksnutsfishing.com"
-
-config :blog, Blog.Repo,
-  pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
-  url: "postgresql://blog_user:ffvyte83z9ypzvby@db-postgresql-sfo2-15967-do-user-7439692-0.a.db.ondigitalocean.com:25060/blog_prod?sslmode=require"
-
-# config :blog, Blog.Repo,
-#   username: "postgres",
-#   password: "postgres",
-#   database: "blog_dev",
-#   hostname: "localhost",
-#   show_sensitive_data_on_connection_error: true,
-#   pool_size: 10
 
 
 # Do not print debug messages in production

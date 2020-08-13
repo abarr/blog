@@ -49,26 +49,11 @@ config :blog, Blog.Subscription.Mailgun,
   list: "test@newsletter.ducksnutsfishing.com",
   base_url: "https://api.mailgun.net/v3/",
   username: "api",
-  password: "key-ef2a9b6e6cad2b2beccf0518a6068107"
-
-# config :blog, Blog.Mail.Mailer,
-#   adapter: Swoosh.Adapters.Local
-
+  password:  System.get_env("DEV_MAIL_KEY")
 
 config :blog, Blog.Mail.Mailer,
-  adapter: Swoosh.Adapters.Mailgun,
-  api_key: "key-ef2a9b6e6cad2b2beccf0518a6068107",
-  domain: "newsletter.ducksnutsfishing.com"
+  adapter: Swoosh.Adapters.Local
+
 
 config :blog, Blog.Mail.Newsletter,
   to_email: "test@newsletter.ducksnutsfishing.com"
-
-config :blog, Blog.Repo,
-  username: "postgres",
-  password: "postgres",
-  database: "blog_dev",
-  hostname: "localhost",
-  show_sensitive_data_on_connection_error: true,
-  pool_size: 10
-
-

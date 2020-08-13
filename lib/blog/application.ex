@@ -7,7 +7,6 @@ defmodule Blog.Application do
 
   def start(_type, _args) do
     children = [
-      Blog.Repo,
       # Start the Telemetry supervisor
       BlogWeb.Telemetry,
       # Start the PubSub system
