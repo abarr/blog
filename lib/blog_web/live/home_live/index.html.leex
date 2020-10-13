@@ -1,24 +1,6 @@
-<div class="grid lg:gap-4 grid-cols-1 lg:grid-cols-3 max-w-none shadow-md rounded-md">
-  <div class="lg:col-span-2 sm:p-5">
-    <div class="md:mt-10 p-5 lg:mb-5">
-      <span
-        class="mt-1 text-3xl text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none sm:text-6xl lg:text-5xl xl:text-6xl">
-        Duck's Nuts Fishing
-        <br />
-        <span class="text-duck-blue-500">weather report</span>
-      </span>
-      <p class="mt-1 mb-0 sm:mb-2 text-base text-gray-500 sm:mt-1 sm:text-xl lg:text-lg xl:text-xl">
-        Get all the info on WIND, SEA, MOON & TIDES in your inbox every week.
-      </p>
-    </div>
-  </div>
-  <div>
-    <img class="hidden lg:block sm:p-10 h-max object-cover" src='<%= Routes.static_path(@socket, "/images/dnf_walking.png") %>' alt="LOGO">
-  </div>
-</div>
 
-<div class="grid gap-4 grid-cols-1 lg:grid-cols-3 max-w-none mt-5 ">
-  <div class="lg:col-span-2">
+<div class="grid gap-4 grid-cols-1  max-w-none mt-5 ">
+  <div class="lg:col-span-1">
 
       <div class="rounded-lg  p-10 mb-5">
         <span class="text-gray-500 text-sm">
@@ -40,8 +22,5 @@
       </div>
 
   </div>
-  <%= live_component( @socket, BlogWeb.Components.SubscribeComponent, id: :subscribe) %>
+
 </div>
-
-
-

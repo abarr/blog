@@ -43,17 +43,3 @@ config :phoenix, :stacktrace_depth, 20
 
 # Initialize plugs at runtime for faster development compilation
 config :phoenix, :plug_init_mode, :runtime
-
-# Config for testing adding a subscriber to a mailing list
-config :blog, Blog.Subscription.Mailgun,
-  list: "test@newsletter.ducksnutsfishing.com",
-  base_url: "https://api.mailgun.net/v3/",
-  username: "api",
-  password:  System.get_env("DEV_MAIL_KEY")
-
-config :blog, Blog.Mail.Mailer,
-  adapter: Swoosh.Adapters.Local
-
-
-config :blog, Blog.Mail.Newsletter,
-  to_email: "test@newsletter.ducksnutsfishing.com"

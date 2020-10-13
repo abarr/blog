@@ -1,11 +1,12 @@
 
 
-<div class="grid gap-4 grid-cols-1 lg:grid-cols-3 max-w-none">
-  <div class="lg:col-span-2">
 
 
-    <%= for post <- @posts do %>
-    <div class="rounded-lg shadow-sm p-5 mb-5">
+<div class="grid gap-4 grid-cols-1  max-w-none mt-5 ">
+  <div class="lg:col-span-1">
+
+     <%= for post <- @posts do %>
+    <div class="rounded-lg shadow-sm p-10 mb-5">
       <span class="text-gray-500 text-sm">
         <%= post.author %>, <%= Datex.Date.format_date(post.date, "DAY_FULL, DATE MONTH_NAME_FULL YYYY") %>
       </span><br />
@@ -24,7 +25,6 @@
       </div>
     </div>
     <% end %>
-
   </div>
-  <%= live_component( @socket, BlogWeb.Components.SubscribeComponent, id: :subscribe) %>
+
 </div>
