@@ -1,14 +1,14 @@
 ==title==
- Blog Post One
+ Reference Data as a Service
 ==author==
- The Duck
+ Andrew Barr
 ==description==
- A Test Blog Post ... no database
+ Setting up reference data for small projects or proff of concepts can be a pain. I decided to make a small library to make it simpler. 
 ==tags==
  weather
 ==body==
 
- The Skinny
+ My First Library
  ----------
 
  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

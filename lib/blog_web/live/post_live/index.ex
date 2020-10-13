@@ -8,7 +8,7 @@ defmodule BlogWeb.PostLive.Index do
     {:ok,
       socket
       |> assign(:posts, fetch_posts())
-      |> assign(:menu, "posts")
+      |> assign(:menu, "blog")
     }
   end
 
@@ -19,7 +19,6 @@ defmodule BlogWeb.PostLive.Index do
 
   defp apply_action(socket, :index, _params) do
     socket
-    |> assign(:page_title, "Ducks Nuts Fishing")
     |> assign(:post, nil)
   end
 
