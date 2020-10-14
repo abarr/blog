@@ -1,5 +1,7 @@
 defmodule Blog.Posts.Post do
 
+  alias Blog.Posts.Highlighter
+
   @enforce_keys [:id, :author, :title, :body, :description, :tags, :date]
   defstruct [
     :id,
@@ -41,7 +43,7 @@ defmodule Blog.Posts.Post do
     do: String.trim(value)
 
   defp parse_attr(:body, value),
-    do: value |> Earmark.as_html!() |> Phoenix.HTML.raw
+    do: value |> Earmark.as_html!() |> external_links(true) |> Highlighter.highlight_code_blocks() |> Phoenix.HTML.raw()
 
   defp parse_attr(:tags, value),
     do: value |> String.split(",") |> Enum.map(&String.trim/1) |> Enum.sort()
@@ -58,4 +60,9 @@ defmodule Blog.Posts.Post do
     end
   end
 
+  # open outside links in a new tab
+  defp external_links(content, true) do
+    Regex.replace(~r/(<a href=\"http.+\")>/U, content, "\\1 target=\"_blank\">")
+  end
+  defp external_links(content, false), do: content
 end

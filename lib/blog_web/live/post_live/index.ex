@@ -7,6 +7,7 @@ defmodule BlogWeb.PostLive.Index do
   def mount(_params, _session, socket) do
     {:ok,
       socket
+      |> assign(:page_title, page_title(socket.assigns.live_action))
       |> assign(:posts, fetch_posts())
       |> assign(:menu, "blog")
     }
@@ -25,4 +26,6 @@ defmodule BlogWeb.PostLive.Index do
   defp fetch_posts do
     Posts.list_posts()
   end
+
+  defp page_title(:index), do: "Andrew Barr"
 end

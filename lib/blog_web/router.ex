@@ -21,6 +21,7 @@ defmodule BlogWeb.Router do
 
     live "/", PostLive.Index, :index
     live "/posts/:id", PostLive.Show, :show
+    live "/about", AboutLive.Index, :index
 
   end
 
@@ -44,10 +45,6 @@ defmodule BlogWeb.Router do
       live_dashboard "/dashboard", metrics: BlogWeb.Telemetry
     end
 
-    scope "/dev" do
-    pipe_through [:browser]
 
-    forward "/mailbox", Plug.Swoosh.MailboxPreview, [base_path: "/dev/mailbox"]
-  end
   end
 end

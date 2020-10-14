@@ -10,6 +10,7 @@
 @import "tailwindcss/utilities";
 @import "../node_modules/nprogress/nprogress.css";
 
+
 p{
   padding-top: 15px;
 }
@@ -43,4 +44,30 @@ h2{
 .phx-disconnected *{
   pointer-events: none;
 }
+
+pre {
+  font-size: smaller;
+  margin-top: 1rem;
+  border: solid;
+  border-color: lightgrey;
+  border-radius: .25em;
+  border-width: thin;
+  padding: 1rem;
+}
+
+.inline {
+  background-color: rgb(236, 214, 214);;
+  font-size: smaller;
+  color: #a02927;
+  border-radius: .25em;
+  padding: .1rem;
+}
+
+.kd, .k {color: rgb(219, 112, 144);}
+.nc, .p {color: rgb(189, 172, 25);}
+.sr, .se, .nf, .kn{color: rgb(60, 149, 223)}
+.s, .c {color: rgb(128, 128, 128)}
+.na, .ni {color: rgb(194, 62, 62);}
+.n, .o, .no {color: rgb(122, 122, 122)}
+.ss {color: rgb(51, 177, 125)}
 

@@ -48,11 +48,9 @@ defmodule Blog.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.3"},
       {:earmark, "~> 1.4"},
-      {:datex, "~> 1.0"},
-      {:tesla, "~> 1.3.0"},
-      # {:hackney, "~> 1.15.2"},
-      {:hackney, github: "benoitc/hackney", override: true},
-      {:swoosh, "~> 0.25"}
+      {:makeup_elixir, "~> 0.14"},
+      {:datex, "~> 1.0"}
+
     ]
   end
 
