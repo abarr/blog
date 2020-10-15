@@ -3,7 +3,7 @@
 ==author==
  Andrew Barr
 ==description==
- Setting up reference data for small projects or proff of concepts can be a pain. I decided to make a small library to make it simpler. 
+ Setting up reference data for small projects or proof of concepts can be a pain. I decided to make a small library to make it simpler. 
 ==tags==
  weather
 ==body==
