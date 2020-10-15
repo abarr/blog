@@ -15,9 +15,9 @@ I recently started applying for jobs as an Elixir developer. If you are interest
 
 One piece of feedback I have received in an interview was to start contributing to open source. As many of you know, that can be daunting, so instead, I decided to build a small library to dip my toe in the water.
 
-One thing that I continually find myself doing is creating code and database infrastructure for standard pieces of reference data like gender, months and countries etc. It always felt like a lot of effort for a small benefit (Usually it is collected for the presentation rather than complex queries.
+One thing that I continually find myself doing is creating code and database infrastructure for standard pieces of reference data like gender, months and countries etc. It always felt like a lot of effort for a small benefit (Usually it is collected for the presentation layer rather than complex queries).
 
-My Solution - RefData
+My Solution -   <span class="text-blue-600 ">[RefData](https://hex.pm/packages/ref_data) </span>
 ----------
 
 I created a small library that I can easily add to a `Phoenix` project called `RefData`. My goals are as follows:
