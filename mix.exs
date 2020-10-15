@@ -51,7 +51,7 @@ defmodule Blog.MixProject do
       {:makeup, "~> 1.0"},
       {:makeup_elixir, "~> 0.14"},
       {:datex, "~> 1.0"},
-      {:ref_data, "~>0.1.2"}
+      {:ref_data, "~>0.1.3"}
 
     ]
   end
