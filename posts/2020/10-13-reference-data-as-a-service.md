@@ -17,6 +17,8 @@ One piece of feedback I have received in an interview was to start contributing 
 
 One thing that I continually find myself doing is creating code and database infrastructure for standard pieces of reference data like gender, months and countries etc. It always felt like a lot of effort for a small benefit (Usually it is collected for the presentation layer rather than complex queries).
 
+See a demo page <span class="text-blue-600 ">[here.](https://andrewbarr.io/ref_data_demo) </span>
+
 My Solution -   <span class="text-blue-600 ">[RefData](https://hex.pm/packages/ref_data) </span>
 ----------
 

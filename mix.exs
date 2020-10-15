@@ -48,8 +48,10 @@ defmodule Blog.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.3"},
       {:earmark, "~> 1.4"},
+      {:makeup, "~> 1.0"},
       {:makeup_elixir, "~> 0.14"},
-      {:datex, "~> 1.0"}
+      {:datex, "~> 1.0"},
+      {:ref_data, "~>0.1.2"}
 
     ]
   end

@@ -1,0 +1,116 @@
+<div class="grid grid-cols-1">
+  <h4 class="font-thin text-4xl my-10 pl-5 unerline">RefData</h4>
+</div>
+<div class="grid gap-4 grid-cols-1  max-w-none ">
+  <div class="lg:col-span-1 pl-5">
+    <p class="">
+      RefData is my first open source library for the Elixir eco-system. The idea is that you can create and easily reuse
+      reference/lookup data for you Phoenix projects without any database infrastructure. It is for data that is generally
+      used for the presentation layer rather than complex SQL queries. I have provided some demo code below.
+    </p>
+  </div>
+</div>
+
+<div class="grid gap-4 grid-cols-2  max-w-none ">
+<h4 class="font-thin text-2xl mt-10 pl-5 underline">Phoenix.HTML.select</h4>
+    <div class="lg:col-span-2 pl-5">
+        <p class="">
+          The example below shows a standard list of values for a dropdown box.
+        </p>
+    </div>
+    <div class="lg:col-span-2 pl-5">
+        <div class="font-semibold">Data</div>
+        ref_data/gender.json
+        <p class="">
+            <%= Makeup.highlight("{
+    'gender': ['Male', 'Female']
+}") |> Phoenix.HTML.raw %>
+        </p>
+    </div>
+    <div class="lg:col-span-2 pl-5">
+        <div class="font-semibold">Code</div>
+        my_page.html.eex
+        <p class="">
+            <%= Makeup.highlight("select(form, :role, MyRefData.get('gender'))") |> Phoenix.HTML.raw %>
+        </p>
+    </div>
+    <div class="lg:col-span-2 pl-5">
+        <div class="font-semibold">Result</div>
+        <p class="">
+            <%= select(:test, :gender, Blog.RefData.Data.get("gender"), [class: "mt-1 form-select block w-auto pl-3 pr-10 py-2 text-base leading-6 border-gray-300 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5", prompt: "Select gender"]) %>
+        </p>
+    </div>
+    <div class="lg:col-span-2 pl-5">
+        <p class="">
+
+        </p>
+    </div>
+    <div class="lg:col-span-2 pl-5">
+        <p class="">
+          The example below shows the results for grouped data.
+        </p>
+    </div>
+    <div class="lg:col-span-2 pl-5">
+        <div class="font-semibold">Data</div>
+        ref_data/countries.json
+        <p class="">
+            <%= Makeup.highlight("{
+    'countries':
+    [
+        { 'Asia': ['Australia', 'New Zealand']},
+        { 'Americas': ['Canada', 'USA']}
+    ]
+}") |> Phoenix.HTML.raw %>
+        </p>
+    </div>
+    <div class="lg:col-span-2 pl-5">
+        <div class="font-semibold">Code</div>
+        my_page.html.eex
+        <p class="">
+            <%= Makeup.highlight("select(form, :role, MyRefData.get('countries'))") |> Phoenix.HTML.raw %>
+        </p>
+    </div>
+    <div class="lg:col-span-2 pl-5">
+        <div class="font-semibold">Result</div>
+        <p class="">
+            <%= select(:test, :gender, Blog.RefData.Data.get("countries_grouped"), [class: "mt-1 form-select block w-auto pl-3 pr-10 py-2 text-base leading-6 border-gray-300 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5", prompt: "Select country"]) %>
+        </p>
+    </div>
+    <div class="lg:col-span-2 pl-5">
+        <p class="">
+
+        </p>
+    </div>
+    <div class="lg:col-span-2 pl-5">
+        <p class="">
+          The example below shows the results for data with disabled values.
+        </p>
+    </div>
+    <div class="lg:col-span-2 pl-5">
+        <div class="font-semibold">Data</div>
+        ref_data/gender.json
+        <p class="">
+            <%= Makeup.highlight("{
+    'gender': ['Male', 'Female']
+}") |> Phoenix.HTML.raw %>
+        </p>
+    </div>
+    <div class="lg:col-span-2 pl-5">
+        <div class="font-semibold">Code</div>
+        my_page.html.eex
+        <p class="">
+            <%= Makeup.highlight("select(form, :role, MyRefData.get('gender', disabled: ['Male']))") |> Phoenix.HTML.raw %>
+        </p>
+    </div>
+    <div class="lg:col-span-2 pl-5">
+        <div class="font-semibold">Result</div>
+        <p class="">
+            <%= select(:test, :gender, Blog.RefData.Data.get("gender", disabled: ["Male"]), [class: "mt-1 form-select block w-auto pl-3 pr-10 py-2 text-base leading-6 border-gray-300 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5", prompt: "Select gender"]) %>
+        </p>
+    </div>
+    <div class="lg:col-span-2 pl-5">
+        <p class="">
+
+        </p>
+    </div>
+</div>
