@@ -11,6 +11,7 @@
 @import "../node_modules/nprogress/nprogress.css";
 
 
+/* purgecss start ignore */
 p{
   padding-top: 15px;
 }
@@ -71,3 +72,4 @@ pre {
 .n, .o, .no {color: rgb(122, 122, 122)}
 .ss {color: rgb(51, 177, 125)}
 
+/* purgecss end ignore */
