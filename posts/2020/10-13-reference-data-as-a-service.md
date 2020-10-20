@@ -5,7 +5,7 @@
 ==description==
  Setting up reference data for small projects or proof of concepts can be a pain. I decided to make a small library to make it simpler. 
 ==tags==
- weather
+ elixir
 ==body==
 
  My First Library
