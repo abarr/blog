@@ -17,6 +17,7 @@ jobs:
         key: ${{ secrets.BLOG_SECRET }}
         port: 22
         script: |
+          export KEY_BASE=${{ secrets.KEY_BASE }}
           cd blog
           git pull origin master
           mix deps.get --only prod 
