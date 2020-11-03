@@ -13,7 +13,7 @@ config :blog, BlogWeb.Endpoint,
     "https://www.andrewbarr.io",
     "http://www.andrewbarr.io:4000"
   ],
-  secret_key_base: "trfMak2t2RxNga25lfKVN/y1hIO8cTIT9l7V7tZ2FSSl2bDz+L3O3FemnvrkzLjy"
+  secret_key_base: System.get_env("KEY_BASE")
 
 # Do not print debug messages in production
 config :logger, level: :info
