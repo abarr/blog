@@ -7,21 +7,21 @@
   <div class="lg:col-span-1">
 
      <%= for post <- @posts do %>
-    <div class="rounded-lg shadow-sm p-5 ">
-      <span class="text-gray-700  text-sm">
-        <%= post.author %>, <%= Datex.Date.format_date(post.date, "DAY_FULL, DATE MONTH_NAME_FULL YYYY") %>
-      </span><br />
+      <div class="rounded-lg shadow-sm p-5 ">
+        <span class="text-gray-700  text-sm">
+          <%= post.author %>, <%= Datex.Date.format_date(post.date, "DAY_FULL, DATE MONTH_NAME_FULL YYYY") %>
+        </span><br />
 
-      <h3 class="mt-1 mb-2 text-3xl leading-7  text-gray-900 text-light">
-         <%= live_redirect post.title, to: Routes.post_show_path(@socket, :show, post) %>
-      </h3>
+        <h3 class="mt-1 mb-2 text-3xl leading-7  text-gray-900 text-light">
+          <%= live_redirect post.title, to: Routes.post_show_path(@socket, :show, post) %>
+        </h3>
 
-      <span class="mt-3 text-base leading-6 text-gray-800 mb-10">
-        <%= post.description %>
-      </span>
+        <span class="mt-3 text-base leading-6 text-gray-800 mb-10">
+          <%= post.description %>
+        </span>
 
 
-    </div>
+      </div>
     <% end %>
   </div>
 
