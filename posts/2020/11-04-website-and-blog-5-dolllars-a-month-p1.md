@@ -3,7 +3,7 @@
 ==author==
  Andrew Barr
 ==description==
- This post describes setting up a Digital Ocean dropletusing Nginx and LetsEncrypt and preparing it to host a Phoenix Application. 
+ This post describes setting up a Digital Ocean Dropletusing Nginx and LetsEncrypt and preparing it to host a Phoenix Application. 
 ==tags==
  elixir
 ==body==
@@ -28,7 +28,7 @@ Press enter twice to skip past the passphrase option. Grab the contents of the p
 $ more id_rsa_do.pub
 ```
 
-Copy the key and paste it into the form after clicking the `new SSH Key` button on the Digital Ocean webpage. After you create the droplet you will be able to copy the `ip address`. Once you have it open your `.ssh/config` file in the editor of your choice (I use `vim`). Create a `Host` block.
+Copy the key and paste it into the form after clicking the `new SSH Key` button on the Digital Ocean webpage. After you create the Droplet you will be able to copy the `ip address`. Once you have it open your `.ssh/config` file in the editor of your choice (I use `vim`). Create a `Host` block.
 
 ```
 Host your-droplet-ip
@@ -37,13 +37,13 @@ Host your-droplet-ip
 	
 ```
 
-Now you can open your terminal and log into your new droplet using `SSH`.
+Now you can open your terminal and log into your new Droplet using `SSH`.
 
 ```
-$ ssh root@your-droplet-ip
+$ ssh root@your-Droplet-ip
 ```
 
-It is always good practice to create a new `user` to control your droplet rather than using the `root` account. At the command line type the following command and create a new password when prompted:
+It is always good practice to create a new `user` to control your Droplet rather than using the `root` account. At the command line type the following command and create a new password when prompted:
 
 ```
 $ adduser your-user-name
@@ -51,17 +51,20 @@ $ adduser your-user-name
 
 After creating the new `user` modify the account to give it the privlages you need. Following that copy over the .ssh directory to your new `user` account so you can login directly to the account using the `ssh key` from above.
 
+
 ```
 $ usermod -aG sudo your-user-name
 $ rsync --archive --chown=your-user-name:your-user-name ~/.ssh /home/your-user-name
 ```
+
+
  You can now close the ssh connection and test your new account by loging back in:
 
 ```
-$ ssh your-user-name@your-droplet-ip
+$ ssh your-user-name@your-Droplet-ip
 ```
 
-I have a domain name (andrewbarr.io) so I changed the DNS records so there was an A record for andrewbarr.io and *.andrewbarr.io pointing to my droplets ip address. This allowed me to modify the `.ssh/config` file:
+I have a domain name (andrewbarr.io) so I changed the DNS records so there was an A record for andrewbarr.io and *.andrewbarr.io pointing to my Droplets ip address. This allowed me to modify the `.ssh/config` file:
 
 ```
 Host your-domain
@@ -70,12 +73,12 @@ Host your-domain
 	
 ```
 
-Now when you login to your droplet you can use `$ ssh your-user-name@your-domain`
+Now when you login to your Droplet you can use `$ ssh your-user-name@your-domain`
 
 
 ## Setting up Erlang, Elixir and Node
 
-At the command line of your droplet run the following commands. You can find the <span class="text-indigo-600">[Erlang installation instructions](https://www.erlang-solutions.com/resources/download.html)</span> under the <span class="font-semibold">Installation Using Repository</span>
+At the command line of your Droplet run the following commands. You can find the <span class="text-indigo-600">[Erlang installation instructions](https://www.erlang-solutions.com/resources/download.html)</span> under the <span class="font-semibold">Installation Using Repository</span>
  heading.
 
 ```
@@ -190,8 +193,8 @@ $ sudo nginx -t
 $ sudo systemctl restart nginx
 ```
 
-You should now be able to navigate to your domain in the browser and see you domain is always running under `SSL`.
+You should now be able to navigate to your domain in the browser and see you domain is always running under `ssl`.
 
-In Part 2 we will build a simple `Phoeinx` aplication and deploy it to the server. 
+In Part 2 we will build a simple `Phoenix` aplication and deploy it to the server. 
 
 <span class="pt-20"></span>
