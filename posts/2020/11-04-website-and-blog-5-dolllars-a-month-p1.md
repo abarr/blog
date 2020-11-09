@@ -194,7 +194,7 @@ $ sudo systemctl restart nginx
 
 You should now be able to navigate to your domain in the browser and see you domain is always running under `ssl`.
 
-In Part 2 we will build a simple `Phoenix` aplication and deploy it to the server. 
+In <span class="text-indigo-600">[Part 2](https://andrewbarr.io/posts/website-and-blog-5-dolllars-a-month-p2)</span> we will build a simple `Phoenix` aplication and deploy it to the server. 
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
