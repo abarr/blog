@@ -191,7 +191,7 @@ Testing
 
 Testing was far more challenging than I expected. Because I am using a `Supervisor` for the `GenServer` I needed to take into a
 ccount that the test process becomes the parent for the `GenServer` process. This sent me back to Google to work out what was going on. Luckily 
-I found a great post by <span class="text-blue-600 ">[Samuel Mullen called: Elixir Process Testing](https://samuelmullen.com/articles/elixir-processes-testing/) </span>. 
+I found a great post by <span class="text-blue-600">[Samuel Mullen called: Elixir Process Testing](https://samuelmullen.com/articles/elixir-processes-testing/) </span>. 
 In the end I opted to test the `GenServer` and not the `Application` API. This is something that I intend to refactor in the coming weeks.
 
 
@@ -204,3 +204,7 @@ extending my Elixir knowledge has been met. Hopefully others will find the libra
 
 
 
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

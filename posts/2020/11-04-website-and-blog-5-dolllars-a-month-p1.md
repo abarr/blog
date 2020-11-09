@@ -187,7 +187,6 @@ $ sudo certbot --nginx -d your-domain -d www.your-domain
 
 After running tests to ensure you own the domain it will offer no redirect or redirect. Choose option 2 so that all insecure traffic is redirected. Once you have finsihed test the configuration and restart `Nginx`
 
-
 ```
 $ sudo nginx -t
 $ sudo systemctl restart nginx
@@ -197,4 +196,7 @@ You should now be able to navigate to your domain in the browser and see you dom
 
 In Part 2 we will build a simple `Phoenix` aplication and deploy it to the server. 
 
-<span class="pt-20"></span>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
