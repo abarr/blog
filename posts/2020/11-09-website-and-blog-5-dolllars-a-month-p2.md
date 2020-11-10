@@ -183,7 +183,22 @@ $ MIX_ENV=prod mix release
 $ _build/prod/rel/your_project/bin/your_project start
 ```
 
-You should now be able to go to your domain and see your Phoeinx application. You can stop your application by using `$ _build/prod/rel/your_project/bin/your_project stop` and if you want to run your application and exit the Droplet you can use `$ _build/prod/rel/your_project/bin/your_project daemon`. You can see all the commands available using `$ _build/prod/rel/your_project/bin/your_project`.
+You should now be able to go to your domain and see your Phoeinx application. You can stop your application by using 
+
+```
+$ _build/prod/rel/your_project/bin/your_project stop
+``` 
+
+If you want to run your application and exit the Droplet you can use 
+
+```
+$ _build/prod/rel/your_project/bin/your_project daemon
+``` 
+You can see all the commands available using 
+
+```
+$ _build/prod/rel/your_project/bin/your_project
+```
 
 In Part 3 I am going to deploy another Phoeinx Application and configure `Nginx` to serve both sites.
 
