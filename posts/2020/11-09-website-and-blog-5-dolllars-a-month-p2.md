@@ -23,7 +23,6 @@ $ mix phx.new blog --live --no-ecto
 
 Following the instructions and ensure that it runs with the default settings (Creating a new <span class="text-indigo-600">[Phoenix App](https://www.phoenixframework.org/)</span> is well documented so I won't spend anytime on it here). However, using the --live and --no-ecto switches will ensure most of the biolerplate we need is setup for us.
 
-
 ## Git 
 
 Make sure you follow best practice and keep your project in a code repo. If you have not done so already, head over to <span class="text-indigo-600">[github](https://www.`github`.com)</span> and create and account. With an account create a new repo called `blog` or whatever you called your `Phoenix Application` above. Once you have a `github` repo create your local git repo and add the `github` remote.
@@ -144,7 +143,7 @@ $ git commit -m "Modified PROD config"
 $ git push
 ```
 
-Now go back to your `ssh` session on the Droplet and run `git pull` from the project directory. Your project will now be up to date on the server. Before we build our release we are going to setup `Nginx`. Open the settings file for you project <span class="text-indigo-600">([See Part 1](https://andrewbarr.io/posts/website-and-blog-5-dolllars-a-month-p1))</span> using `$ sudo vim /etc/nginx/sites-available/your-website-name`, add the following section directly above the sever config:
+Now go back to your `ssh` session on the Droplet and run `git pull` from the project directory. Your project will now be up to date on the server. Before we build our release we are going to setup `Nginx`. Open the settings file for your project <span class="text-indigo-600">([See Part 1](https://andrewbarr.io/posts/website-and-blog-5-dolllars-a-month-p1))</span> using `$ sudo vim /etc/nginx/sites-available/your-website-name`, add the following section directly above the sever config:
 
 ```
 upstream your-website-name{
