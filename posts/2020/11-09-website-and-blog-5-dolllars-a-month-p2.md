@@ -148,7 +148,7 @@ Now go back to your `ssh` session on the Droplet and run `git pull` from the pro
 
 ```
 upstream your-website-name{
-	server 127.0.0.1:4000
+	server 127.0.0.1:4000;
 }
 
 server {
@@ -167,7 +167,7 @@ location / {
 	proxy_set_header X-Cluster-Client-Ip $remote_addr;
 
 	proxy_set_header Upgrade $http_upgrade;
-	proxy_set_header Connection "upgrade"
+	proxy_set_header Connection "upgrade";
 
 	proxy_pass http://your-website-name; # Defined above
 }
