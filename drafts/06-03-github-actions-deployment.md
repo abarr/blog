@@ -1,9 +1,9 @@
 ==title==
- How I Built My Blog
+ Automate Phoenix Deployment using Github Actions
 ==author==
  Andrew Barr
 ==description==
- I loved the Dashbit post about how they built their blog. I didn't want to use a database so decided to build my own.
+ The following post describes how I use Github Actions to auto deploy my Phoenix Application
 ==tags==
  Elixr, Development
 ==body==
