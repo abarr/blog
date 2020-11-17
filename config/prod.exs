@@ -9,9 +9,7 @@ config :blog, BlogWeb.Endpoint,
   url: [host: "andrewbarr.io", port: 80],
   check_origin: [
     "https://andrewbarr.io",
-    "http://andrewbarr.io:4000",
-    "https://www.andrewbarr.io",
-    "http://www.andrewbarr.io:4000"
+    "https://www.andrewbarr.io"
   ],
   secret_key_base: System.get_env("KEY_BASE")
 
