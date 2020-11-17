@@ -3,14 +3,14 @@
 ==author==
  Andrew Barr
 ==description==
- I recently built a proof of concept application using Elixir with Phoenix and deployed it to Digital Ocean to get feedback. To keep costs down I installed Postgres locally.
+ I recently built a proof of concept application using Elixir with Phoenix and deployed it to Digital Ocean.
 ==tags==
  Elixr
 ==body==
 
 ## Installing Postgres
 
-This post assumes you have a Digital Ocean Droplet using Ubuntu and setup for an Elixir Application using Phoenix. To get started open a `ssh` session to your Droplet and run the following commands (If you have not setup your server check out this <span class="text-indigo-600">[Post](https://andrewbarr.io/posts/website-and-blog-5-dolllars-a-month-p1)</span>).
+This post assumes you have a Digital Ocean Droplet using Ubuntu and setup for an Elixir Application using Phoenix. To get started open a `ssh` session to your Droplet and run the following commands. If you have not setup your server check out this [Post](https://andrewbarr.io/posts/website-and-blog-5-dolllars-a-month-p1).
 
 ```
 $ sudo apt update

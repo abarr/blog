@@ -62,15 +62,15 @@
 </div>
 
 <div x-data="{
-    openTab: 1,
-    activeClasses: ' bg-gray-200 focus:outline-none focus:bg-gray-300',
-    inactiveClasses: ' hover:text-gray-800 focus:outline-none focus:text-gray-800 focus:bg-gray-200',
+    openTab: 4,
+    activeClasses: '  text-gray-700 bg-gray-100 focus:outline-none focus:bg-gray-200',
+    inactiveClasses: ' text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 focus:bg-gray-100',
   }" >
 
 
   <div class="mb-10">
     <div class="sm:hidden">
-      <select aria-label="Selected tab" class="mt-1 form-select block w-full pl-3 pr-10 py-2 text-base leading-6 border-gray-300 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5 transition ease-in-out duration-150">
+      <select aria-label="Selected tab" class="form-select block w-full">
         <option>About</option>
         <option>Work History</option>
         <option >Education</option>
@@ -78,24 +78,23 @@
       </select>
     </div>
     <div class="hidden sm:block">
-      <div class="">
-        <ul class="-mb-px flex">
-          <li @click="openTab = 1" :class=" openTab === 1 ? activeClasses : inactiveClasses" class="px-3 py-2 text-2xl leading-5 rounded-md text-gray-500 ">
-            About
-          </li>
-          <li @click="openTab = 2" :class=" openTab === 2 ? activeClasses : inactiveClasses" class="px-3 py-2  text-2xl leading-5 rounded-md text-gray-500">
-            Work History
-          </li>
-          <li @click="openTab = 3" :class=" openTab === 3 ? activeClasses : inactiveClasses" class="px-3 py-2  text-2xl leading-5 rounded-md text-gray-500">
-            Education
-          </li>
-          <li @click="openTab = 4" :class=" openTab === 4 ? activeClasses : inactiveClasses" class="px-3 py-2  text-2xl leading-5 rounded-md text-gray-500">
-            Technical Stuff
-          </li>
-        </ul>
-      </div>
+      <nav class="flex">
+        <a href="#" @click="openTab = 1" :class=" openTab === 1 ? activeClasses : inactiveClasses" class="px-3 py-2 font-medium text-sm leading-5 rounded-md ">
+          About
+        </a>
+        <a href="#" @click="openTab = 2" :class=" openTab === 2 ? activeClasses : inactiveClasses" class="ml-4 px-3 py-2 font-medium text-sm leading-5 rounded-md ">
+          Work History
+        </a>
+        <a href="#" @click="openTab = 3" :class=" openTab === 3 ? activeClasses : inactiveClasses" class="ml-4 px-3 py-2 font-medium text-sm leading-5 rounded-md">
+          Education
+        </a>
+        <a href="#" @click="openTab = 4" :class=" openTab === 4 ? activeClasses : inactiveClasses" class="ml-4 px-3 py-2 font-medium text-sm leading-5 rounded-md ">
+          Technical Stuff
+        </a>
+      </nav>
     </div>
   </div>
+
 
   <div>
     <div x-show="openTab === 1" >
@@ -262,11 +261,7 @@
                   </div>
                   <div class="ml-2 flex-shrink-0 flex">
                     <span class=" inline-flex text-lg leading-5 ">
-
-                    <span>
                         SMS Management & Technology
-
-                    </span>
                     </span>
                   </div>
                 </div>
@@ -332,11 +327,7 @@
                   </div>
                   <div class="ml-2 flex-shrink-0 flex">
                     <span class=" inline-flex text-lg leading-5 ">
-
-                    <span>
                         Commbank
-
-                    </span>
                     </span>
                   </div>
                 </div>
@@ -380,11 +371,7 @@
                   </div>
                   <div class="ml-2 flex-shrink-0 flex">
                     <span class=" inline-flex text-lg leading-5 ">
-
-                    <span>
                         IAG
-
-                    </span>
                     </span>
                   </div>
                 </div>
@@ -495,10 +482,26 @@
     </div>
     <div x-show="openTab === 4" style="display: none;">
 
-      <p class="px-5 pb-5 text-lg">
-        I have not written code as part of a professional development team for over a decade. However, I have always maintained an interest in
-        technology and programming languages. I have been writing and learning Elixir since 2017 and feel comfortable that I am able to contribute
-        in a meaningful way.
+      <p class=" text-lg">
+        <span class="font-semibold">Elixir, Phoenix and Postgres</span></br>
+        I have been writing personal projects in Elixir since 2017. I have used Phoeinx with and without LiveView and
+        understand Ecto and Postgres. With direct commercial experience I have started to Blog about what I am doing and
+        how I have solved my own problems.
+      </p>
+      <p class=" text-lg">
+        <span class="font-semibold">Deployment</span></br>
+        I have used Elixir's native Releases and Distillery. I have deployed the application executables as well as using containers
+        onto the Google Cloud Platform. More recently I have used GitHub Actiosn to automate deploymnet of my Blog and Consulting website.
+      </p>
+      <p class=" text-lg">
+        <span class="font-semibold">Open Source</span></br>
+        More recently I have started to contributing to Open Source projects. As a soft start I built my own open source library called
+        RefData and published it to Hex. After working through that I made my first pull request to a multi-tenancy library called
+        Triplex.
+      </p>
+      <p class=" text-lg">
+        <span class="font-semibold">Elixir Forum</span></br>
+        I have become more active on Elixir Forum and try to assist when possible as well as monitor new libraries and community announcements.
       </p>
     </div>
   </div>

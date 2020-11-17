@@ -17,9 +17,9 @@ One piece of feedback I have received in an interview was to start contributing 
 
 One thing that I continually find myself doing is creating code and database infrastructure for standard pieces of reference data like gender, months and countries etc. It always felt like a lot of effort for a small benefit (Usually it is collected for the presentation layer rather than complex queries).
 
-See a demo page <span class="text-blue-600 ">[here.](https://andrewbarr.io/ref-data-demo) </span>
+See a demo page [here.](https://andrewbarr.io/ref-data-demo)
 
-My Solution -   <span class="text-blue-600 ">[RefData](https://hex.pm/packages/ref_data) </span>
+My Solution - [RefData](https://hex.pm/packages/ref_data) 
 ----------
 
 I created a small library that I can easily add to a `Phoenix` project called `RefData`. My goals are as follows:
@@ -61,12 +61,12 @@ I also wanted to suport grouped data which will provide headings for sub lists. 
 Data Storage
 ----------
 
-My next challenge was working out how to store the data. My Blog is built using the methods described in the <span class="text-blue-600">[Dashbit Blog Post](https://dashbit.co/blog/welcome-to-our-blog-how-it-was-made) </span> about how they built their blog. However, I wanted to try something different so decided to use a `GenServer`. I have no doubt that it is probably overkill but I was able to work with `Supervisors`, `GenServer` and testing processes and cement my learnings.
+My next challenge was working out how to store the data. My Blog is built using the methods described in the [Dashbit Blog Post](https://dashbit.co/blog/welcome-to-our-blog-how-it-was-made) about how they built their blog. However, I wanted to try something different so decided to use a `GenServer`. I have no doubt that it is probably overkill but I was able to work with `Supervisors`, `GenServer` and testing processes and cement my learnings.
 
 
 Building the Library
 ----------
- <span class="text-blue-600 ">[Source code](https://github.com/abarr/ref_data) </span>
+ [Source code](https://github.com/abarr/ref_data) 
 
 Now that I had decided on the general approach I started by defining an API. I knew that I wanted to focus on supporting `Phoenix.HTML.select` so would be returning a list with `key/value` pairs.
 
@@ -191,17 +191,15 @@ Testing
 
 Testing was far more challenging than I expected. Because I am using a `Supervisor` for the `GenServer` I needed to take into a
 ccount that the test process becomes the parent for the `GenServer` process. This sent me back to Google to work out what was going on. Luckily 
-I found a great post by <span class="text-blue-600">[Samuel Mullen called: Elixir Process Testing](https://samuelmullen.com/articles/elixir-processes-testing/) </span>. 
+I found a great post by [Samuel Mullen called: Elixir Process Testing](https://samuelmullen.com/articles/elixir-processes-testing/). 
 In the end I opted to test the `GenServer` and not the `Application` API. This is something that I intend to refactor in the coming weeks.
 
 
 Next Steps
 ----------
 
-<span class="mb-96">I still have plenty to do on my library (i.e. Refactor for testing, Support GetText and build a demo page) but so far my primary goal of 
-extending my Elixir knowledge has been met. Hopefully others will find the library useful or at least be inspired to build their first library.</span>
-
-
+I still have plenty to do on my library (i.e. Refactor for testing, Support GetText and build a demo page) but so far my primary goal of 
+extending my Elixir knowledge has been met. Hopefully others will find the library useful or at least be inspired to build their first library.
 
 
 <p>&nbsp;</p>

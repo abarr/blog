@@ -78,7 +78,7 @@ Now when you login to your Droplet you can use `$ ssh your-user-name@your-domain
 
 ## Setting up Erlang, Elixir and Node
 
-At the command line of your Droplet run the following commands. You can find the <span class="text-indigo-600">[Erlang installation instructions](https://www.erlang-solutions.com/resources/download.html)</span> under the <span class="font-semibold">Installation Using Repository</span>
+At the command line of your Droplet run the following commands. You can find the [Erlang installation instructions](https://www.erlang-solutions.com/resources/download.html) under the Installation Using Repository
  heading.
 
 ```
@@ -194,7 +194,7 @@ $ sudo systemctl restart nginx
 
 You should now be able to navigate to your domain in the browser and see you domain is always running under `ssl`.
 
-In <span class="text-indigo-600">[Part 2](https://andrewbarr.io/posts/website-and-blog-5-dolllars-a-month-p2)</span> we will build a simple `Phoenix` aplication and deploy it to the server. 
+In [Part 2](https://andrewbarr.io/posts/website-and-blog-5-dolllars-a-month-p2) we will build a simple `Phoenix` aplication and deploy it to the server. 
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>

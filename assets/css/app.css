@@ -11,6 +11,10 @@ p{
   padding-top: 15px;
 }
 
+a{
+  color: rgb(97, 132, 245);
+}
+
 h2{
   font-size: larger;
   margin-bottom: 20px;

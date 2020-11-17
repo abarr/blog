@@ -9,11 +9,11 @@
 ==body==
 
 
-This is the third part of a series focussing on setting up more than one Phoenix Application on a single Digital Ocean Droplet (<span class="text-indigo-600">[Part 1 can be found here](https://andrewbarr.io/posts/website-and-blog-5-dolllars-a-month-p1)</span> and <span class="text-indigo-600">[Part 2 here](https://andrewbarr.io/posts/website-and-blog-5-dolllars-a-month-p2)</span>).
+This is the third part of a series focussing on setting up more than one Phoenix Application on a single Digital Ocean Droplet ([Part 1 can be found here](https://andrewbarr.io/posts/website-and-blog-5-dolllars-a-month-p1) and [Part 2 here](https://andrewbarr.io/posts/website-and-blog-5-dolllars-a-month-p2)).
 
 ## A Second Phoenix Application 
 
-Follow the same process to create a second Phoenix application described in <span class="text-indigo-600">[Part 2](https://andrewbarr.io/posts/website-and-blog-5-dolllars-a-month-p2)</span>. 
+Follow the same process to create a second Phoenix application described in [Part 2](https://andrewbarr.io/posts/website-and-blog-5-dolllars-a-month-p2). 
 
 ## Git 
 
