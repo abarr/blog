@@ -22,6 +22,7 @@ defmodule BlogWeb.Router do
     live "/", PostLive.Index, :index
     live "/posts/:id", PostLive.Show, :show
     live "/about", AboutLive.Index, :index
+    live "/cv", CVLive.Index, :index
     live "/ref-data-demo", RefDataLive.Index, :index
 
   end

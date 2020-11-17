@@ -1,5 +1,5 @@
 ==title==
- Installing Postgres on Digital Ocean Droplet for Phoenix Application
+ Installing Postgres on Digital Ocean Droplet for a Phoenix Application
 ==author==
  Andrew Barr
 ==description==
@@ -82,7 +82,7 @@ config :my_app, MyApp.Repo,
   pool_size: 10
 ```
 
-You can now create a `PROD` release and test your database connection. 
+You can now create a `PROD` release and test your database connection. I will write a post shortly to show how I am using Github Actions to deploy my applications.
 
 
 
