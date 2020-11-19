@@ -65,7 +65,8 @@ Back at the prompt set a password for `user-name-you-chose` so the application c
 
 ```
 $ sudo -u postgres psql
-postgres=# \password user-name-you-chose # Follow prompts to set password
+postgres=# \password user-name-you-chose 
+# Follow prompts to set password
 postgres=# \q
 ```
 
@@ -76,8 +77,9 @@ I am using Github Actions to deploy my Phoenix application and added a Secret to
 ```
 config :my_app, MyApp.Repo,
   username: "user-name-you-chose",
-  password: System.get_env("PG_PASS"), # If using prod_secrets.exs you can add the password here
   database: "my_app_prod",
+  # prod_secrets.exs - password here
+  password: System.get_env("PG_PASS"), 
   hostname: "127.0.0.1",
   pool_size: 10
 ```

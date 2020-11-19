@@ -46,7 +46,6 @@ h2{
 }
 
 pre {
-  font-size: smaller;
   margin-top: 1rem;
   border: solid;
   border-color: lightgrey;
@@ -55,8 +54,14 @@ pre {
   padding: 1rem;
 }
 
+@media screen and (max-width: 601px) {
+  code{
+    font-size: 2.5vw;
+  }
+}
+
 .inline {
-  background-color: rgb(236, 214, 214);;
+  background-color: rgb(236, 214, 214);
   font-size: smaller;
   color: #a02927;
   border-radius: .25em;
