@@ -17,7 +17,7 @@ $ sudo apt update
 $ sudo apt install postgresql postgresql-contrib
 ```
 
-By default the installation process will setup a user called `postgres` so you can test teh installion by changing user accounts and opening the Postgres prompt:
+By default the installation process will setup a user called `postgres` so you can test the installion by changing user accounts and opening the Postgres prompt:
 
 ```
 $ sudo -i -u postgres
