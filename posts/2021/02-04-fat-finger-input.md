@@ -11,14 +11,14 @@
  Premise
  ----------
 
-I was recently chatting with someone about an application for use in the mining sector. One of the topics was a simple input form for operators who notoriously hate using technology solutions for data input. One of the terms used was 'fat fingered operators' (hence the title of the post). Before anyone gets upset it wasn't meant as a derogitory term but rather as a flag to think of simple robust methods to make peoples jobs easier.
+I was recently chatting with someone about an application for use in the mining sector. One of the topics was a simple input form for operators who notoriously hate using technology to input data. One of the terms used was ‘fat-fingered operators’ (hence the title of the post). Before anyone gets upset, it was not meant as a derogatory term but rather as a flag to think of simple, robust methods to make peoples jobs more comfortable.
 
-We talked about QR Codes, Image Recognition and AI as ways of automatically understanding what the operator was looking at and what type of data they are trying to capture and record. It would be fun to work on all of these solutions but I started to think about a fast simple solution that might be viable.
+We talked about QR Codes, Image Recognition, and AI to automatically understand what the operator was looking at and what type of data they are trying to capture and record. It would be fun to work on all of these solutions, but I started to think about a fast, simple solution that might be viable.
 
  Idea
  ----------
 
-I had recently seen someone walking along using the voice to text funtion on their phone and it occurred to me that it might be a simple solution to save our operators having to search or type input when recording data. I spent a couple of hours playing around with Liveview and came up with the following POC:
+I had recently seen someone walking along using the voice to text function on their phone, and it occurred to me that it might be a simple solution to save our operators having to search or type input when recording data. I spent a couple of hours playing around with Liveview and came up with the following POC:
 
 <p>&nbsp;</p>
 <div style="display: flex; justify-content: center;">
@@ -26,7 +26,7 @@ I had recently seen someone walking along using the voice to text funtion on the
 </div>
 <p>&nbsp;</p>
 
-The Monitoring device input is an autocomplete `text-input`, using my iPhone I selected the dictation icon and said 'orange' which provided a list of options. After selecting the device I entered the value using a large number pad.
+The Monitoring device input is an autocomplete `text-input`, using my iPhone; I selected the dictation icon and said 'orange' which provided a list of options. After selecting the device, I entered the value using a large number pad.
 
  The Code
  ----------
@@ -37,9 +37,9 @@ I started by creating a Phoenix Live application called `fat_fingers`
 > mix phx.new --live --no-ecto
 ```
 
-I am currently in love with [Tailwind](https://tailwindcss.com) so spent a little bit of time setting it up. I have removed the css from the code below for simplicity.
+I am currently in love with [Tailwind](https://tailwindcss.com) so spent a little bit of time setting it up. I have removed the CSS from the code below for simplicity.
 
-I modified the default `PageLive` for my POC adding in assigns to capture `matches`, `value` and to record the `device` once selected.
+I modified the default `PageLive` for my POC adding in assigns to capture `matches`, `value`, and record the `device` once selected.
 
 ```
 defmodule FatFingersWeb.PageLive do
@@ -89,7 +89,7 @@ end
 
 ```
 
-I knew I wanted to allow the User to search for a `device` and provide a list to select from so added an event handler to return matches and another one to handle the selection
+I knew I wanted to allow the user to search for a `device` and provide a list to select from so added an event handler to return matches and another one to handle the selection.
 
 ```
 @impl true
@@ -105,7 +105,7 @@ socket = assign(socket, device: match, matches: [])
 end
 
 ```
-The next step was to allow teh User to enter a value using a large number pad. Because I am simulating a cursor for the value as a default this event handler tests to see if `value` is in the default state. Otherwise it appends the added value.
+The next step was to allow the user to enter a value using a large number pad. Because I am simulating a cursor for the `value` as a default this event handler tests to see if `value` is in the default state, otherwise, it appends the added value.
 
 ```
 @impl true
@@ -125,7 +125,8 @@ The next step was to allow teh User to enter a value using a large number pad. B
   end
 ```
 
-Finally I wanted to allow the User to clear the value if they made an error
+
+Finally, I wanted to allow the user to clear the value if they made an error.
 
 ```
   @impl true
@@ -135,7 +136,7 @@ Finally I wanted to allow the User to clear the value if they made an error
   end
 ```
 
-In the `page_live.html.leex` I created a form and a large number pad
+In the `page_live.html.leex` I created a form and a large number pad.
 
 ```
 <form class="" phx-change="search">
@@ -191,8 +192,8 @@ In the `page_live.html.leex` I created a form and a large number pad
 </form>
 ```
 
-I love working with Liveview and the more I use it the more I am impressed with its simplicity and efficency. 
 
+I love working with Liveview, and the more I use it, the more I am impressed with its simplicity and efficiency. 
 
 You can find the project code [here](https://github.com/abarr/fat_fingers)
 
